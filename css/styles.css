@@ -11057,3 +11057,7 @@ footer.footer {
   background-color: #474787 !important;
   border-top: none;
 }
+footer.footer,
+.copyright {
+  background-color: #474787 !important;
+}
