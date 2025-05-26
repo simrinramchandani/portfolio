@@ -11044,6 +11044,6 @@ html {
 .copyright {
   background-color: #1a252f;
 }
-:root {
-  --bs-primary: #474787;
+.bg-primary {
+  background-color: #474787 !important;
 }
