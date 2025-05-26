@@ -11050,3 +11050,10 @@ html {
 body {
   background-color: #474787 !important;
 }
+.navbar {
+  background-color: #474787 !important;
+}
+footer.footer {
+  background-color: #474787 !important;
+  border-top: none;
+}
