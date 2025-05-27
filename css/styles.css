@@ -11061,3 +11061,21 @@ footer.footer,
 .copyright {
   background-color: #474787 !important;
 }
+
+.footer-container {
+  position: relative;
+  height: 120px;
+  width: 100%;
+}
+
+.footer-connect {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.footer-copy {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
