@@ -11079,3 +11079,13 @@ footer.footer,
   bottom: 10px;
   right: 20px;
 }
+
+.portfolio-item-caption-content i {
+  display: none !important;
+}
+
+.portfolio-item-caption-content::before,
+.portfolio-item-caption-content::after {
+  display: none !important;
+  content: none !important;
+}
