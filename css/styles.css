@@ -79,6 +79,20 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53);
+  background-size: 400% 400%;
+  animation: gradientFlow 20s ease infinite;
+  color: white;
+}
+
+
+
+
+
 *,
 *::before,
 *::after {
@@ -11040,18 +11054,17 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: transparent;
-  color: #fff;
+  background: transparent;
+  color: white;
+  width: 100%;
 }
+
 
 .copyright {
   background-color: transparent;
 }
 
-.footer,
-.copyright {
-  backdrop-filter: blur(8px);
-}
+
 
 
 body {
