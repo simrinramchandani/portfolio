@@ -27,43 +27,21 @@
 
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
   <div class="container-fluid position-relative">
-
-    <!-- Desktop + Mobile: Brand in center using absolute on lg and flex on mobile -->
-    <a class="navbar-brand fw-bold text-white text-uppercase mx-auto d-lg-block d-flex justify-content-center w-100 position-lg-absolute top-50 start-50 translate-middle text-center" href="#page-top">
+    
+    <!-- Desktop Brand Centered -->
+    <a class="navbar-brand fw-bold text-white text-uppercase d-none d-lg-block position-absolute start-50 translate-middle-x" href="#page-top">
       Simrin Ramchandani
     </a>
 
-    <!-- Desktop: Left Nav -->
-    <ul class="navbar-nav flex-row d-none d-lg-flex">
-      <li class="nav-item mx-2">
-        <a class="nav-link text-white" href="#about">About</a>
-      </li>
-      <li class="nav-item mx-2">
-        <a class="nav-link text-white" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item mx-2">
-        <a class="nav-link text-white" href="assets/resume.pdf" target="_blank">Resume</a>
-      </li>
-    </ul>
-
-    <!-- Desktop: Right Icons -->
-    <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-3">
-      <a href="https://www.linkedin.com/in/simrin-ramchandani/" target="_blank" class="text-white me-3" aria-label="LinkedIn">
-        <i class="fab fa-linkedin fa-lg"></i>
-      </a>
-      <a href="mailto:simrinramchandani05@gmail.com" class="text-white" aria-label="Email">
-        <i class="fas fa-envelope fa-lg"></i>
-      </a>
-    </div>
-
-    <!-- Mobile: Toggle button -->
+    <!-- Toggler for Mobile -->
     <button class="navbar-toggler text-white ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Mobile: Collapsible content -->
-    <div class="collapse navbar-collapse mt-2 d-lg-none" id="navbarResponsive">
-      <!-- Mobile: Nav Links -->
+    <!-- Nav Content -->
+    <div class="collapse navbar-collapse w-100 justify-content-between" id="navbarResponsive">
+      
+      <!-- Left: Nav Links -->
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link text-white" href="#about">About</a>
@@ -76,8 +54,13 @@
         </li>
       </ul>
 
-      <!-- Mobile: Icons -->
-      <div class="d-flex mt-2">
+      <!-- Mobile Brand Centered -->
+      <a class="navbar-brand fw-bold text-white text-uppercase d-lg-none mx-auto" href="#page-top">
+        Simrin Ramchandani
+      </a>
+
+      <!-- Right: Icons -->
+      <div class="d-flex align-items-center">
         <a href="https://www.linkedin.com/in/simrin-ramchandani/" target="_blank" class="text-white me-3" aria-label="LinkedIn">
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
