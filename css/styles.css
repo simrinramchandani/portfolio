@@ -11211,3 +11211,13 @@ footer.footer,
 .copyright {
   background-color: transparent !important;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer.footer {
+  margin-top: auto;
+}
