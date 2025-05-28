@@ -100,10 +100,14 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Gradient background */
+  background: linear-gradient(to bottom, #1a1a40, #5f27cd); /* Dark blue to purple */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+
+
+
 
 
 hr {
@@ -11091,3 +11095,4 @@ footer.footer,
   display: none !important;
   content: none !important;
 }
+
