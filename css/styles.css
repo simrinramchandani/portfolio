@@ -11155,3 +11155,22 @@ footer.footer,
       0 0 24px #ff6ec7;
   }
 }
+
+
+@media (max-width: 768px) {
+  #mainNav .navbar-brand {
+    font-size: 1rem;
+    white-space: normal;
+    text-align: center;
+    width: 100%;
+  }
+
+  .masthead-subheading-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tagline-highlight p {
+    font-size: 1.25rem;
+  }
+}
