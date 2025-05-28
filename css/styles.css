@@ -11047,23 +11047,21 @@ html {
 .copyright {
   background-color: #1a252f;
 }
-.bg-primary {
-  background-color: #474787 !important;
-}
+
+
 body {
-  background-color: #474787 !important;
+  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53);
+  background-size: 400% 400%;
+  animation: gradientFlow 20s ease infinite;
+  color: white;
 }
-.navbar {
-  background-color: #474787 !important;
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-footer.footer {
-  background-color: #474787 !important;
-  border-top: none;
-}
-footer.footer,
-.copyright {
-  background-color: #474787 !important;
-}
+
 
 .footer-container {
   position: relative;
