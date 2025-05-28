@@ -11219,3 +11219,17 @@ body {
 footer.footer {
   margin-top: auto;
 }
+
+
+.masthead {
+  padding-top: 140px; /* try increasing if needed */
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.tagline-highlight {
+  position: relative;
+  z-index: 2;
+}
