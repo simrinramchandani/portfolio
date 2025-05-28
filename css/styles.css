@@ -11079,3 +11079,20 @@ footer.footer,
   bottom: 10px;
   right: 20px;
 }
+
+.masthead-subheading-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.masthead-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
