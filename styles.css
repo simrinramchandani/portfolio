@@ -79,6 +79,20 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53);
+  background-size: 400% 400%;
+  animation: gradientFlow 20s ease infinite;
+  color: white;
+}
+
+
+
+
+
 *,
 *::before,
 *::after {
@@ -91,7 +105,6 @@
   }
 }
 
-
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -100,11 +113,10 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Gradient background */
+  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 
 hr {
   margin: 1rem 0;
@@ -10970,9 +10982,12 @@ html {
 }
 
 .masthead {
+  position: relative; /* ✅ Add this line */
+  overflow: hidden;   /* ✅ Optional but good to include */
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
+
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
@@ -11039,30 +11054,33 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
-  color: #fff;
+  background: transparent;
+  color: white;
+  width: 100%;
 }
 
+
 .copyright {
-  background-color: #1a252f;
+  background-color: transparent;
 }
-.bg-primary {
-  background-color: #474787 !important;
-}
+
+
+
+
 body {
-  background-color: #474787 !important;
+  background: linear-gradient(180deg, #0d0d2b, #1f103f, #350b53);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
 }
-.navbar {
-  background-color: #474787 !important;
+
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-footer.footer {
-  background-color: #474787 !important;
-  border-top: none;
-}
-footer.footer,
-.copyright {
-  background-color: #474787 !important;
-}
+
 
 .footer-container {
   position: relative;
@@ -11082,17 +11100,122 @@ footer.footer,
   right: 20px;
 }
 
-.portfolio-item-caption-content i {
-  display: none !important;
+.masthead-subheading-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-.portfolio-item-caption-content::before,
-.portfolio-item-caption-content::after {
-  display: none !important;
-  content: none !important;
+
+.masthead-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 
+
+
+
+
+
+.tagline-highlight {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow:
+    0 0 4px #fff,
+    0 0 12px #ff6ec7,
+    0 0 24px #ff6ec7;
+  animation: pulseGlow 4s ease-in-out infinite;
+  max-width: 90vw;
+}
+
+.masthead-subheading {
+  font-size: 1.75rem; /* slightly reduced */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+  text-shadow:
+    0 0 3px #fff,
+    0 0 6px #ff6ec7;
+  white-space: nowrap; /* keeps it all on one line */
+}
+
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow:
+      0 0 4px #fff,
+      0 0 12px #ff6ec7,
+      0 0 24px #ff6ec7;
+  }
+  50% {
+    box-shadow:
+      0 0 6px #fff,
+      0 0 16px #ff6ec7,
+      0 0 32px #ff6ec7;
+  }
+  100% {
+    box-shadow:
+      0 0 4px #fff,
+      0 0 12px #ff6ec7,
+      0 0 24px #ff6ec7;
+  }
+}
+
+
+/* === Mobile Fixes for Tagline === */
+@media (max-width: 768px) {
+  .masthead {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .masthead-subheading-wrapper {
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+  }
+
+  .masthead-subheading {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 0 10px;
+    word-break: break-word;
+  }
+
+  .tagline-highlight {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+}
+
+.bg-primary,
 .masthead {
-  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Optional contrast gradient */
+  background-color: transparent !important;
+}
+
+.page-section {
+  background-color: transparent !important;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer.footer {
+  margin-top: auto;
 }
