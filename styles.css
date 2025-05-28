@@ -91,6 +91,7 @@
   }
 }
 
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -99,10 +100,11 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Gradient background */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 
 hr {
   margin: 1rem 0;
@@ -11046,4 +11048,51 @@ html {
 }
 .bg-primary {
   background-color: #474787 !important;
+}
+body {
+  background-color: #474787 !important;
+}
+.navbar {
+  background-color: #474787 !important;
+}
+footer.footer {
+  background-color: #474787 !important;
+  border-top: none;
+}
+footer.footer,
+.copyright {
+  background-color: #474787 !important;
+}
+
+.footer-container {
+  position: relative;
+  height: 120px;
+  width: 100%;
+}
+
+.footer-connect {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.footer-copy {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.portfolio-item-caption-content i {
+  display: none !important;
+}
+
+.portfolio-item-caption-content::before,
+.portfolio-item-caption-content::after {
+  display: none !important;
+  content: none !important;
+}
+
+
+.masthead {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Optional contrast gradient */
 }
