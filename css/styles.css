@@ -11118,15 +11118,16 @@ footer.footer,
   position: absolute;
   width: 200%;
   height: 200%;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
-  background-size: 30px 30px;
-  animation: sparkleAnim 10s linear infinite;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.3) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+  animation: sparkleAnim 20s linear infinite;
 }
 
 .sparkle-bg::after {
   animation-delay: 5s;
   opacity: 0.5;
 }
+
 
 @keyframes sparkleAnim {
   0% {
