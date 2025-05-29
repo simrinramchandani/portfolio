@@ -11101,12 +11101,11 @@ body {
 
 .masthead-subheading-wrapper {
   max-width: 700px;
-  padding: 2rem;
+  margin: 0 auto;
+  padding-top: 4rem;  /* increased */
+  padding-bottom: 2.5rem;  /* slightly more space */
   position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
 }
 
 
@@ -11247,4 +11246,20 @@ footer.footer {
   visibility: visible !important;
   z-index: 5;
   position: relative;
+}
+
+
+.masthead-heading {
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
 }
