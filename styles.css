@@ -11183,16 +11183,8 @@ footer.footer,
 }
 
 
-/* ─── Restore readable modals ─────────────────────────────────────────────────── */
-
-/* 1) Make the modal card itself a white box */
 .modal-content {
-  background-color: #fff !important;
-}
-
-/* 2) Force all text inside that white box to black */
-.modal-content,
-.modal-content * {
-  color: #000 !important;
+  background-color: white;
+  color: black;
 }
 
