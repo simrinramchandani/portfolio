@@ -100,7 +100,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Gradient background */
+  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -11090,9 +11090,4 @@ footer.footer,
 .portfolio-item-caption-content::after {
   display: none !important;
   content: none !important;
-}
-
-
-.masthead {
-  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Optional contrast gradient */
 }
