@@ -117,12 +117,14 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  color: white;
+  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53);
+  background-attachment: fixed;
+  background-size: cover;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 
 hr {
   margin: 1rem 0;
@@ -11256,8 +11258,17 @@ footer.footer {
 }
 
 
+#projects,
+#about {
+  background: transparent !important;
+}
+
+
+header,
 .masthead,
 .page-section,
+section,
+footer,
 footer.footer,
 .copyright {
   background: transparent !important;
