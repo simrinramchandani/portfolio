@@ -11183,22 +11183,19 @@ footer.footer,
 }
 
 
-/* Fix modal background and text color */
 .modal-content {
-  background-color: #ffffff; /* White background */
-  color: #000000;            /* Black text */
+  background-color: #000 !important; /* black background */
+  color: white !important; /* white text */
 }
 
-/* Ensure header text, paragraphs, lists, etc., are all black */
-.modal-body,
-.modal-body h2,
-.modal-body p,
-.modal-body li,
-.modal-body small {
-  color: #000000 !important;
+.modal-content h2,
+.modal-content h5,
+.modal-content p,
+.modal-content li,
+.modal-content small {
+  color: white !important;
 }
 
-/* Make the close button visible on white background */
-.modal-header .btn-close {
-  filter: invert(1); /* Inverts color to make it dark */
+.btn-close {
+  filter: invert(1); /* makes the close button visible */
 }
