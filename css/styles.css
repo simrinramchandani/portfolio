@@ -11211,3 +11211,20 @@ footer.footer,
   color: black !important;
 }
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  animation: gradientFlow 20s ease infinite;
+  color: white;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
