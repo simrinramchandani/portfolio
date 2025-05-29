@@ -11183,31 +11183,31 @@ footer.footer,
 }
 
 
-.modal-content {
-  background-color: #000 !important; /* black background */
-  color: white !important; /* white text */
-}
-
-.modal-content h2,
-.modal-content h5,
-.modal-content p,
-.modal-content li,
-.modal-content small {
-  color: white !important;
-}
-
-.btn-close {
-  filter: invert(1); /* makes the close button visible */
-}
-
 
 .modal-content {
-  background-color: #474787 !important;
-  color: white !important;
+  background-color: white !important;
+  color: black !important;
 }
 
 .modal-header,
 .modal-body,
 .modal-footer {
-  color: white !important;
+  background-color: white !important;
+  color: black !important;
 }
+
+.modal-title {
+  color: black !important;
+}
+
+.modal-content h1,
+.modal-content h2,
+.modal-content h3,
+.modal-content h4,
+.modal-content h5,
+.modal-content h6,
+.modal-content p,
+.modal-content li {
+  color: black !important;
+}
+
