@@ -11276,3 +11276,14 @@ body {
   animation: gradientFlow 20s ease infinite !important;
   background-attachment: fixed !important;
 }
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53) !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  color: white !important;
+}
