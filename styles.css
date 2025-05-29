@@ -11287,3 +11287,13 @@ html, body {
   background-attachment: fixed !important;
   color: white !important;
 }
+
+header,
+.masthead,
+.page-section,
+section,
+footer,
+footer.footer,
+.copyright {
+  background: transparent !important;
+}
