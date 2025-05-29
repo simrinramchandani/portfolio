@@ -11265,31 +11265,18 @@ footer.footer {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
-
-/* Full-page unified gradient */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53) no-repeat;
-  background-size: cover;
-
-  background-repeat: no-repeat;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* restore readable text inside Bootstrap modals */
+.modal-content {
+  /* if you want the default white background: */
+  background-color: #fff !important;
+  /* text becomes black again */
+  color: #000 !important;
 }
 
-/* Allow sections to show the gradient behind them */
-main,
-section,
-header,
-footer,
-.container,
-.page-section,
-.masthead {
-  background: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
+/* ensure header/body/footer all pick up that new text color */
+.modal-header,
+.modal-body,
+.modal-footer {
+  color: #000 !important;
 }
+
