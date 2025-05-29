@@ -11216,7 +11216,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #0d0d2b, #1f103f, #6f42c1);
+  background: linear-gradient(135deg, #0d0d2b, #3e1f92, #c13584);
   background-size: 400% 400%;
   background-attachment: fixed;
   animation: gradientFlow 20s ease infinite;
