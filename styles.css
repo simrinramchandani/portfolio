@@ -109,9 +109,11 @@ body {
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: white;
-  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53);
-  background-attachment: fixed;
+  
+  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53) no-repeat;
   background-size: cover;
+
+
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
