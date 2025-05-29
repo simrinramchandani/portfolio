@@ -11066,12 +11066,17 @@ html {
 
 
 
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background: linear-gradient(180deg, #0d0d2b, #1f103f, #350b53);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-attachment: fixed;
   color: white;
 }
+
 
 
 @keyframes gradientFlow {
@@ -11254,4 +11259,12 @@ footer.footer {
     font-size: 4rem;
     line-height: 3.5rem;
   }
+}
+
+
+.masthead,
+.page-section,
+footer.footer,
+.copyright {
+  background: transparent !important;
 }
