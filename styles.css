@@ -11271,9 +11271,9 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53);
-  background-attachment: fixed;
+  background: linear-gradient(135deg, #0d0d2b, #1f103f, #350b53) no-repeat;
   background-size: cover;
+
   background-repeat: no-repeat;
   color: white;
   display: flex;
