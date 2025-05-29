@@ -11066,18 +11066,6 @@ html {
 
 
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(180deg, #0d0d2b, #1f103f, #350b53);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  color: white;
-}
-
-
 
 @keyframes gradientFlow {
   0% { background-position: 0% 50%; }
